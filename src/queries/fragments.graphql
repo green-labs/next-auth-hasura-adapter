@@ -1,10 +1,12 @@
 fragment User on users {
   __typename
   id
+  pk
   name
   email
   image
   emailVerified
+  role
 }
 
 fragment Session on sessions {

@@ -1,12 +1,15 @@
+import dotenv from "dotenv"
 import { CodegenConfig } from "@graphql-codegen/cli";
+
+dotenv.config()
 
 const config: CodegenConfig = {
   overwrite: true,
   schema: {
-    "http://localhost:8080/v1/graphql": {
+    "https://hasura.farmmoa.farmmorning.dev/v1/graphql": {
       headers: {
         "content-type": "application/json",
-        "x-hasura-admin-secret": "admin_secret",
+        "x-hasura-admin-secret": process.env.HASURA_GRAPHQL_ADMIN_SECRET,
       },
     },
   },

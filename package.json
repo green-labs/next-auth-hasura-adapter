@@ -29,8 +29,8 @@
   "license": "MIT",
   "peerDependencies": {
     "graphql": "^16.7.1",
-    "graphql-tag": "^2.12.6",
     "graphql-request": "^6.1.0",
+    "graphql-tag": "^2.12.6",
     "next-auth": "^4.22.1"
   },
   "devDependencies": {
@@ -38,8 +38,10 @@
     "@graphql-codegen/typescript": "4.0.1",
     "@graphql-codegen/typescript-graphql-request": "5.0.0",
     "@graphql-codegen/typescript-operations": "4.0.1",
+    "@types/node": "^20.11.17",
     "@typescript-eslint/eslint-plugin": "6.1.0",
     "@typescript-eslint/parser": "6.1.0",
+    "dotenv": "^16.4.3",
     "eslint": "8.45.0",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-simple-import-sort": "10.0.0",
